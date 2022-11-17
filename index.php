@@ -30,7 +30,7 @@
         <div class="row">
           <div class="header-section text-center">
            
-            <div class="col-md-12 text-center">
+            <div class="col-md-13 text-center">
               <img src="img/logo1.jpg" class="img img-square"> <br><br>
             </div>
            <p>" Picerija Picamanija " otvorena 2003. godine, danas je jedna od najposećenijih picerija na Banovom Brdu. 
@@ -44,7 +44,7 @@
   <div class="col-md-12 text-center">
     <div class="row">
         <div class="column">
-            <img src="img/oNama.jpg"  style="width:100%">
+            <img src="img/ambijent.jpg"  style="width:100%">
         </div>
         <div class="column">
             <img src="img/pica.jpg"  style="width:100%">
