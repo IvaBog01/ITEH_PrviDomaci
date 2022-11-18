@@ -14,7 +14,7 @@
             </select>
         </div>
         <div class="col-6">
-            <input onchange="render()" class="form-control" type="text" id="search" placeholder="pretraži po kategoriji...">
+            <input onchange="render()" class="form-control" type="text" id="search" placeholder="pretraži po nazivu...">
         </div>
         <div class="col-3">
             <select onchange="render()" class="form-control" id="kategorije">
@@ -75,8 +75,9 @@
         const search = $('#search').val();
         const sort = Number($('#sort').val());
         const kat = Number($('#kategorije').val());
+
         const niz = pice.filter(element => {
-            return (kat == 0 || element.kategorija == kat) && element.naziv.includes(search)
+            return (kat == 0 || element.id_vrsta_pice == kat) && element.naziv.toLowerCase().includes(search.toLowerCase())
         }).sort((a, b) => {
             return (a.cena > b.cena) ? sort : 0 - sort;
         });
